@@ -17,15 +17,15 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 40px;
+  margin: 10px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 32px;
 }
 
-h3 {
-  font-size: 24px;
+.sub-sub-title {
   opacity: 0.7;
 }
 
@@ -96,7 +96,6 @@ p {
 
 .container h2,
 p {
-  text-align: left;
   background: none;
   padding: 0;
 }
@@ -109,4 +108,47 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+
+  .container h2,
+  p {
+    text-align: left;
+    background: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .nav-item .nav-link, .navbar-brand {
+    text-align: left;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .container a {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .container h3 {
+    margin: 10px 10px;
+  }
 }

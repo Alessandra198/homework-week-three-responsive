@@ -25,6 +25,10 @@ h2 {
   font-size: 32px;
 }
 
+header h1 {
+  margin-top: 100px;
+}
+
 .sub-sub-title {
   opacity: 0.7;
 }
@@ -132,14 +136,25 @@ p {
   }
 }
 
-@media (max-width: 576px) {
+.contact {
+  margin: 50px auto;
+}
 
-  .nav-item .nav-link, .navbar-brand {
+@media (max-width: 576px) {
+  .nav-item .nav-link,
+  .navbar-brand {
     text-align: left;
   }
 
-  main {
+  header h1 {
+    font-size: 50px;
+  }
+  .homepage-main {
     text-align: center;
+  }
+
+  .about-me-photos img {
+    margin-bottom: 20px;
   }
 
   .container a {
